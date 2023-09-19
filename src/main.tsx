@@ -4,7 +4,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
    <React.StrictMode>
-      <div className="">
+      <div className="prose h-screen w-screen flex flex-col justify-center items-center ">
          <header>
             <h1>Coucou</h1>
          </header>
