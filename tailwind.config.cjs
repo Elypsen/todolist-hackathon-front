@@ -7,5 +7,9 @@ module.exports = {
       extend: {},
    },
    plugins: [require('tailwindcss-text-balance'), require('daisyui')],
+   daisyui: {
+      themes: 'black'
+      , dark: 'black',
+   },
 }
 
