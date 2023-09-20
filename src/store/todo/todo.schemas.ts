@@ -11,11 +11,15 @@ export const Z_TaskSchema = z.object({
       .max(256, 'Message is too long. (256 characters maximum)'),
    isChecked: z.boolean().default(false),
 });
+
 export const Z_Tasks = z.object({
    todos: z.array(Z_TaskSchema),
 });
+
 export type T_Task = z.infer<typeof Z_TaskSchema>;
 export type T_TodoState = z.infer<typeof Z_Tasks>;
+
+
 export type T_TodoActions = {
    addTodo: (task: T_Task) => T_Task | ZodError['message'];
    removeTodo: (id: T_Task['id']) => string | ZodError['message'];
