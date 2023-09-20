@@ -1,9 +1,9 @@
-import {classed} from '@tw-classed/react';
-import {Navigate} from 'react-router-dom';
-import useAuthStore from '../store/store.auth.ts';
+import {Navigate} from 'react-router-dom'
+import useAuthStore from '../store/store.auth.ts'
 
-import MainContainer from '../components/main-container.styled.tsx';
-import {ROUTES} from '../routes.constants.ts';
+import MainContainer from '../components/main-container.styled.tsx'
+import {ROUTES} from '../routes.constants.ts'
+import {classed} from '@tw-classed/react'
 
 export function LoginPage() {
    const isLoggedIn = useAuthStore(state => state.isLoggedIn);
@@ -57,16 +57,16 @@ export function LoginPage() {
    );
 }
 
-const Input = classed(
+export const Input = classed(
    'input',
    'block w-full rounded-lg border border-primary/40 bg-gray-50 p-2.5 text-sm text-primary-content-90 focus:border-primary-focus focus:ring-blue-500'
 );
-const Label = classed('label', 'm-2 block text-sm font-medium text-primary-content-90');
-const CheckBox = classed(
+export const Label = classed('label', 'm-2 block text-sm font-medium text-primary-content-90');
+export const CheckBox = classed(
    'input',
    'focus:ring-3 h-4 w-4 rounded border border-primary/40 bg-gray-50 focus:ring-blue-300'
 );
-const SubmitButton = classed(
+export const SubmitButton = classed(
    'button',
    'w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:w-auto'
 );
