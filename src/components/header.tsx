@@ -46,11 +46,11 @@ export default function Header() {
 
 const NavigationLink = classed(
    'a',
-   'text-primary-content focus:ring-base-300 mr-2 rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50 focus:outline-none focus:ring-4 lg:px-5 lg:py-2.5',
+   'text-primary-content focus:ring-base-300 mr-2 rounded-lg px-4 py-2 text-sm font-medium hover:bg-primary focus:outline-none focus:ring-4 lg:px-5 lg:py-2.5',
    {
       variants: {
          active: {
-            true: 'text-primary-content/60 underline underline-offset-2 decoration-primary-content/40',
+            true: 'text-primary-content/60 underline underline-offset-2 decoration-primary-content/40 hover:bg-transparent hover:cursor-default',
          },
       },
    }

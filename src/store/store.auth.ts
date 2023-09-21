@@ -11,7 +11,7 @@ type AuthActions = {
 }
 
 const useAuthStore = create<AuthState & AuthActions>(set => ({
-   isLoggedIn: true,
+   isLoggedIn: false,
    login: () => {
       set({isLoggedIn: true})
       history.pushState('','','/')
