@@ -11,7 +11,7 @@ export function Footer() {
                <ul
                   className='mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0 space-x-4 md:space-x-6'>
                   <li>
-                     <p className='hover:underline hover:cursor-not-allowed '>About</p>
+                     <p className='hover:underline hover:cursor-not-allowed'>About</p>
                   </li>
                   <li>
                      <p className='hover:underline hover:cursor-not-allowed'>Privacy Policy</p>
