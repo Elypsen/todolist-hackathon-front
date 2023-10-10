@@ -18,7 +18,7 @@ export default function HomePage() {
 
    return (
       <MainContainer withFlex>
-         <h1 className={'text-primary-content text-3xl'}>TodoList</h1>
+         <h1  className={'text-primary-content text-3xl'}>TodoList</h1>
          {todos.map(todo => (
             <div key={todo.id} className={twMerge(
                'w-full flex items-center pl-4 gap-8 border rounded ',
@@ -31,7 +31,7 @@ export default function HomePage() {
                   className={twMerge('checkbox focus:ring-3 h-4 w-4 rounded border focus:ring-blue-300 accent-primary',
                      todo.isChecked ?
                         'border-success bg-success checkbox-success'
-                        : 'checkbox-primary bg-primary')}
+                        : 'checkbox-primary')}
                   onChange={() => {
                      const response = checkTodo(todo);
                      console.log(response); // debug in console
@@ -46,7 +46,8 @@ export default function HomePage() {
                      todo.isChecked
                         ? 'font-normal italic text-success'
                         : 'font-medium text-gray-300')}>{todo.description}</label>
-               <span className={'flat-right pr-8'}><TrashIcon className={'hover:text-error text-primary-content/20 hover:cursor-pointer'} width={20}  height={20}/></span>
+               <span className={'flat-right pr-8'}><TrashIcon
+                  className={'hover:text-error text-primary-content/20 hover:cursor-pointer'} width={20} height={20} /></span>
             </div>
          ))}
       </MainContainer>
